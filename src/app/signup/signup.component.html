@@ -1,0 +1,36 @@
+<div class="body1">
+  <div class="container">
+    <!--Sign Up-->
+    <div class="title">
+      <h4 style="text-align: center;">Sign Up</h4>
+      <div class="content">
+        <div class="user-details">
+          <form [formGroup]="useradd" (ngsubmit)="onSubmitS()">
+            <span class="details">Name</span>
+            <input type="text" formcontrolname="name" placeholder="Enter your name" required>
+
+            <span class="details">Email</span>
+            <input type="text" formcontrolname="email" placeholder="Enter your email" required>
+            <span class="details">Phone Number</span>
+            <input type="text" formcontrolname="phonenumber" placeholder="Enter your number" required>
+
+            <div class="text-center" *ngIf="!useradd.valid && useradd.errors">
+              {{useradd.errors}}
+            </div>
+
+            <div class="text-center">
+              <a href=""><button type="submit" class="btn btn-primary">
+                                    <h5>Register</h5>
+                                </button></a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function removeElement() {
+        document.getElementById("Signin").style.display = "none";
+    }
+</script>
