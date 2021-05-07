@@ -2,18 +2,20 @@
   <mat-grid-tile *ngFor="let M of menu">
     <div>
       <mat-card class="example-card">
-
         <mat-card-content>
-          <img mat-card-image height="150" width="150"src="https://material.angular.io/assets/img/examples/shiba2.jpg" 
-          alt="Photo of food">
+          <img
+            mat-card-image
+            height="150"
+            width="150"
+            src="https://as1.ftcdn.net/jpg/02/78/92/18/500_F_278921841_vM2aY8flooJsRtkS6xXZo256BuBNKLS6.jpg"
+            alt="Photo of food"
+          />
         </mat-card-content>
         <mat-card-footer>
           <mat-card-title>{{M.name}}</mat-card-title>
           <mat-card-subtitle>${{M.price | number: '1.0-0'}}</mat-card-subtitle>
-
         </mat-card-footer>
       </mat-card>
     </div>
-
   </mat-grid-tile>
 </mat-grid-list>
