@@ -126,14 +126,18 @@
 <!-- </div>
 </div> -->
 
-
 <mat-grid-list cols="4">
   <mat-grid-tile *ngFor="let M of menu">
     <div>
       <mat-card class="example-card">
-
         <mat-card-content>
-          <img mat-card-image height="150" width="150"src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+          <img
+            mat-card-image
+            height="150"
+            width="150"
+            src="https://i.pinimg.com/originals/9f/72/c5/9f72c5916d1d19c09871e09e9e38f768.jpg"
+            alt="Photo of a Shiba Inu"
+          />
         </mat-card-content>
         <mat-card-footer>
           <mat-card-title>{{M.name}}</mat-card-title>
@@ -144,6 +148,5 @@
         </mat-card-footer>
       </mat-card>
     </div>
-
   </mat-grid-tile>
 </mat-grid-list>
